@@ -1,0 +1,18 @@
+Reglas
+
+- Las sentencias de asignación son de orden constante O(1).
+- La complejidad de un if es el maximo entre el bloque si se cumple la condición y el bloque else.
+- La complejidad de un bucle es el número maximo de iteraciones del bucle para el peor caso, multiplicado por la complejidad del interior del bucle.
+- La complejidad de un bloque de código es la suma de la complejidad de todas las sentencias del bloque.
+- La complejidad de la llamada a una función se considera de orden constante O(1), aunque depende de que función estemos invocando.
+
+Complejidades más comunes
+
+- Complejidad constante: O(1)
+- Complejidad logaritmica: O(log n)
+- Complejidad lineal: O(n)
+- Complejidad n logaritmica: O(n log n)
+- Complejidad cuadratica: O(n¨2)
+- Complejidad cubica: O(n¨3)
+- Complejidad exponencial: O(2¨n)
+- Complejidad O(k¨n)

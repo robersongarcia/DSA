@@ -1,2 +1,5 @@
 # Ignore PDF Files
 *.pdf
+
+#ignore vscode config
+.vscode
