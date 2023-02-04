@@ -10,12 +10,18 @@ long multiplication(int a, int b){
     return total;
 }
 
+long multiplicationRecur(int a, int b){
+    if( b == 1)
+        return a;
+    else
+        return a + multiplicationRecur(a, b-1);
+}
 
 int main(int argc, char const *argv[])
 {
     int a,b;
     scanf("%d %d", &a, &b );
-    printf("%ld\n", multiplication(a,b));
+    printf("%ld\n", multiplicationRecur(a,b));
 
     return 0;
 }
