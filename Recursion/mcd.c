@@ -11,6 +11,6 @@ int mcd(int a, int b){
 
 int main(int argc, char const *argv[])
 {
-    printf("%d \n", mcd(25,60));
+    printf("%d \n", mcd(1265,2970));
     return 0;
 }
