@@ -1,8 +1,10 @@
 #include <stdio.h>
 
-int varInitial[] = {1,2,3,4,5,6};
-int varFinal[] = {0,0,0,0,0,0};
-int varCentral[] = {0,0,0,0,0,0};
+#define LENGTH 7
+
+int varInitial[LENGTH] = {1,2,3,4,5,6,7};
+int varFinal[LENGTH];
+int varCentral[LENGTH];
 
 void moveDisc(int initial[], int aux[], int final[], int Disc){
 
@@ -10,7 +12,7 @@ void moveDisc(int initial[], int aux[], int final[], int Disc){
     int position = 0, i,j;
     Disc++;
 
-    for( i = 0 ; i < 6 ;i++ ){
+    for( i = 0 ; i < LENGTH ;i++ ){
         if(initial[i]==Disc)
             position = i;
     }
@@ -57,9 +59,9 @@ void printArray(int array[],int n){
 
 int main(int argc, char const *argv[])
 {
-    hanoi(6);
-    printArray(varInitial,6);
-    printArray(varCentral,6);
-    printArray(varFinal,6);
+    hanoi(LENGTH);
+    printArray(varInitial,LENGTH);
+    printArray(varCentral,LENGTH);
+    printArray(varFinal,LENGTH);
     return 0;
 }
