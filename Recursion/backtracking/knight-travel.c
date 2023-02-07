@@ -58,8 +58,6 @@ int main(int argc, char const *argv[])
     int y=1;
     board[x][y] = 1;
     int flag=0;
-    drawBoard();
-
 
     knigth_travel(2,x,y,&flag);
 
